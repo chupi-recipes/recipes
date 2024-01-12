@@ -32,6 +32,8 @@ jobs:
         run: python ./src/generate.py
       - name: Setup Pages
         uses: actions/configure-pages@v4
+      - name: Copy public to dist
+        run: cp -r ./public/* ./dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
