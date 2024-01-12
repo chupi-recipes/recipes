@@ -1,7 +1,9 @@
 import glob
+import os
 from jinja2 import Template
 
 def main():
+    os.makedirs("./dist", exist_ok=True)
     filenames = [filename for filename in glob.glob("./recipes/*.md")]
 
     with open("./src/templates/index.html.jinja", "r") as f:
