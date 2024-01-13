@@ -2,7 +2,7 @@
 {% block content %}
     <article>
         <h1>{{ title }}</h1>
-        <p>Adapted from <a href="{{ source.link }}">{{ source.name }}</a></p>
+        <p>Adapted from <a href="{{ source.link }}" target="_blank" rel="noopener noreferrer">{{ source.name }}</a></p>
         <p>{{ servings }}</p>
         <a href="./">Back</a>
         {% for id, section in sections %}
