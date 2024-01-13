@@ -1,6 +1,9 @@
+# Mustroom and Pancetta Risotto
+
 Adapted from [RICARDO](https://www.ricardocuisine.com/en/recipes/6394-mushroom-and-pancetta-risotto)
-# Ingredients
+
 Servings: 4 (large)
+# Ingredients
 ## Mushrooms
 - 225 g white mushrooms, sliced
 - 225 g fresh wild mushrooms, quartered (see note)
@@ -15,9 +18,9 @@ Servings: 4 (large)
 - 500 ml arborio rice
 - 250 ml white wine
 - 250 ml grated Parmigiano Reggiano cheese
-# Pre-prep
-- Cut and prepare all the ingredients before starting to cook. Cooking is pretty busy. 
 # Preparation
+- Cut and prepare all the ingredients before starting to cook. Cooking is pretty busy. 
+# Directions
 ## Mushrooms
 - Cook the pancetta on high heat, remove when cooking leaving behind the oil.
 - Add a bit more oil to the pan, and cook the mushrooms. Add the pancetta when done and remove from heat.

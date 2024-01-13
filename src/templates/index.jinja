@@ -1,0 +1,10 @@
+{% extends "base.jinja" %}
+{% block content %}
+    <h1>Recipes</h1>
+    <p>A collection of recipes that I've found over the years and I want to put in a single location</p>
+    {% for name, url in items %}
+        <a href="{{ url }}">
+            {{ name }}
+        </a>
+    {% endfor %}
+{% endblock %}

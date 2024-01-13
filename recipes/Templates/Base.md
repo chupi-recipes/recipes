@@ -1,11 +1,13 @@
+# Name
 Adapted from [src](link)
+
+Servings:
 # Ingredients
-Servings: 
 ## 
 - 
-# Pre-prep
-- 
 # Preparation
+- 
+# Directions
 ##
 - 
 # Notes
