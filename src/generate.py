@@ -113,7 +113,7 @@ def generate_index(paths):
 
     for path in paths:
         name = os.path.basename(path).replace(".md", "").title()
-        url = f"/{get_url_name(path)}.html"
+        url = f"./{get_url_name(path)}.html"
 
         items.append((name, url))
 
