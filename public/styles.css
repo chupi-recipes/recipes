@@ -38,15 +38,14 @@ article {
 /* Typography and color */
 
 html {
+    background: #C19F9D;
+    background: linear-gradient(225deg, #C19F9D, #756385);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
 
 body {
-    background: #C19F9D;
-    background: linear-gradient(225deg, #C19F9D, #756385);
     color: #333;
-
     --accent-color: #444444;
 }
 
@@ -116,8 +115,15 @@ section:last-child {
 
 label {
     display: flex;
-    align-items: baseline;
+    --webkit-box-align: baseline;
+
     gap: 4px;
+}
+
+@supports not (-webkit-touch-callout: none) {
+    label {
+        align-items: first baseline;
+    }
 }
 
 ul {
