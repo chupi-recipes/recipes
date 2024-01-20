@@ -60,7 +60,7 @@ def generate_section(section):
 
         template = env.get_template("list.jinja")
 
-        return template.render(heading=heading, items=items, heading_level=heading_level)
+        return template.render(heading=heading, items=items, heading_level=heading_level, use_checkbox=True)
     else:
         heading, *items = section
         heading = heading[0]
@@ -71,7 +71,7 @@ def generate_section(section):
 
         template = env.get_template("list.jinja")
 
-        return template.render(heading=heading, items=items, heading_level=heading_level)
+        return template.render(heading=heading, items=items, heading_level=heading_level, use_checkbox=False)
 
 
 def get_id(section):

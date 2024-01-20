@@ -4,7 +4,11 @@
 <ul>
     {% for item in items %}
         <li>
-            {{ item }}
+            {%- if use_checkbox -%}
+                <label><input type=checkbox> <span>{{ item }}</span></label>
+            {%- else -%}
+                {{ item }}
+            {%- endif -%}
         </li>
     {% endfor %}
 </ul>

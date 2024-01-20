@@ -1,3 +1,130 @@
-body {
-    background: lavender;
+/* Page layout */
+
+html {
+    min-height: 100%;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+article {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 50px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+#meta {
+    flex-basis: 100%;
+}
+
+#ingredients {
+    flex-basis: 40%;
+}
+
+#directions {
+    flex-basis: 55%;
+}
+
+#notes {
+    flex-basis: 100%;
+}
+
+/* Typography and color */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background: #C19F9D;
+    background: linear-gradient(225deg, #C19F9D, #756385);
+    color: #333;
+
+    --accent-color: #444444;
+}
+
+h1, h2, h3 {
+    color: var(--accent-color);
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+
+article {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Spacing */
+
+h1 {
+    margin: 0 0 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+section:last-child {
+    padding-bottom: 0;
+}
+
+/* Design */
+
+#heading {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+}
+
+#sub-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+ul {
+    padding: 0;
+}
+
+#notes input {
+    display: none;
+}
+
