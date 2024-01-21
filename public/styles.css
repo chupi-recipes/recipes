@@ -8,12 +8,15 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 article {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 50px 80px;
+    max-width: 68.75rem;
+    padding: 3.125rem 5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
@@ -54,30 +57,34 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
     font-family: 'EB Garamond', serif;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 
 article {
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
 /* Spacing */
 
+article {
+    margin: 1.25rem;
+}
+
 h1 {
-    margin: 0 0 20px;
+    margin: 0 0 1.25rem;
 }
 
 ul {
@@ -86,7 +93,7 @@ ul {
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 li:last-child {
@@ -94,7 +101,7 @@ li:last-child {
 }
 
 section {
-    padding-bottom: 20px;
+    padding-bottom: 1.25rem;
 }
 
 section:last-child {
@@ -106,7 +113,7 @@ section:last-child {
 #heading {
     display: flex;
     align-items: baseline;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 #sub-heading {
@@ -118,7 +125,7 @@ label {
     display: flex;
     --webkit-box-align: baseline;
 
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 @supports not (-webkit-touch-callout: none) {
