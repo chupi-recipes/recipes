@@ -56,6 +56,12 @@ article {
     flex-basis: 100%;
 }
 
+#recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 @media screen and (max-width: 600px) {
     article {
         padding: 2rem;
@@ -75,7 +81,7 @@ article {
 
 html {
     background: #C19F9D;
-    background: linear-gradient(225deg, #C19F9D, #756385);
+    background: linear-gradient(225deg, #aea4e3, #d3ffe8);
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
