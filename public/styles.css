@@ -112,7 +112,8 @@ h3 {
 
 article {
     border-radius: 2rem;
-    border: thick dashed #FBB296;
+    border: thick dashed #fbb296;
+    background-color: #fff;
 }
 
 @media screen and (max-width: 600px) {
