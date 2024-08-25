@@ -118,6 +118,7 @@ article {
     --s: 30px;
     --c1: #ffffff;
     --c2: #fbb296;
+    position: relative;
 }
 
 article::before {
