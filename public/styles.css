@@ -118,8 +118,6 @@ article {
     --s: 30px;
     --c1: #ffffff;
     --c2: #fbb296;
-    aspect-ratio: 1;
-    position: relative;
 }
 
 article::before {
