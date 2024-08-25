@@ -80,8 +80,8 @@ article {
 /* Typography and color */
 
 html {
-    background: #C19F9D;
-    background: linear-gradient(225deg, #aea4e3, #d3ffe8);
+    background: #ffe8e4;
+/*     background: linear-gradient(225deg, #aea4e3, #d3ffe8); */
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
