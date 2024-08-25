@@ -116,6 +116,10 @@ article {
     background-color: #fff;
 }
 
+a {
+    color: #fff;
+}
+
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 2rem;
