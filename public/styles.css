@@ -114,6 +114,25 @@ article {
     border-radius: 0.5rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    --b: 5px;
+    --s: 30px;
+    --c1: #ffffff;
+    --c2: #fbb296;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+article::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: var(--b);
+    background: repeating-conic-gradient(var(--c1) 0 25%, var(--c2) 0 50%) 0 0 / var(--s) var(--s) round;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
