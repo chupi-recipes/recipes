@@ -64,7 +64,7 @@ article {
 
 @media screen and (max-width: 600px) {
     article {
-        padding: 2rem;
+        padding: 1rem;
         gap: 0;
     }
 
