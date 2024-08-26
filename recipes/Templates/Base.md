@@ -1,17 +1,16 @@
-# Name
+# $Name$
 
-Adapted from [src](link)
+Adapted from [$src$]($link$)
 
-Servings:
+Servings: $$
 
 # Ingredients
-
-##
+## $Subheading (optional)$
 - 
 
 # Directions
-
-##
+## $Subheading (optional)$
 - 
+
 # Notes
 - 
