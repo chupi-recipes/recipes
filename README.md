@@ -1,5 +1,5 @@
 # recipes
-Work in progress.
+Work in progress
 
 ## Dev env
 
