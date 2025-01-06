@@ -56,7 +56,7 @@ article {
     flex-basis: 100%;
 }
 
-#recipe-list {
+.recipe-list {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -80,7 +80,7 @@ article {
 /* Typography and color */
 
 html {
-    background: #ffe8e4;
+    background: #FFB0B0;
 /*     background: linear-gradient(225deg, #aea4e3, #d3ffe8); */
     font-family: 'Montserrat', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     line-height: 1.5;
@@ -112,8 +112,13 @@ h3 {
 
 article {
     border-radius: 2rem;
-    border: thick dashed #fbb296;
+    border: 10px solid #fff7d1;
     background-color: #fff;
+}
+
+section {
+    border-radius: 1rem;
+    outline: 3px dashed #ffd09b;
 }
 
 a {
@@ -126,48 +131,6 @@ a {
         width: 100%;
         text-align: center;
     }
-}
-
-/* Spacing */
-
-#home p {
-    margin: 0;
-    padding-bottom: 1.25rem;
-}
-
-#home-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-article {
-    margin: 1.25rem;
-}
-
-h1 {
-    margin: 0 0 1.25rem;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 0.9375rem;
-}
-
-li:last-child {
-    margin-bottom: 0;
-}
-
-section {
-    padding-bottom: 1.25rem;
-}
-
-section:last-child {
-    padding-bottom: 0;
 }
 
 /* Design */
@@ -232,3 +195,53 @@ ul {
     display: none;
 }
 
+/* Spacing */
+
+#home p {
+    margin: 0;
+    padding-bottom: 1.25rem;
+}
+
+#home-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+article {
+    margin: 1.25rem;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.9375rem;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+section {
+    margin-bottom: 1.25rem;
+}
+
+section:last-child {
+    padding-bottom: 0;
+}
+
+h2 {
+    margin-top: 0.5rem;
+}
+
+section > * {
+    padding: 0.75rem;
+    margin: 0;
+}

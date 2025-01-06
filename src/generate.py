@@ -108,7 +108,7 @@ def generate_recipe(path):
         output.write(content)
 
 
-def generate_index(paths):
+def get_index_items(paths):
     items = []
 
     for path in paths:
@@ -117,17 +117,26 @@ def generate_index(paths):
 
         items.append((name, url))
 
+    return items
+
+
+def generate_index(nick_paths, mizuki_paths):
     template = env.get_template("index.jinja")
 
-    with open("./dist/index.html", "w") as output:
-        output.write(template.render(items=items))
+    with open("./dist/index.html", "w", encoding="utf-8") as output:
+        output.write(template.render(nick_items=get_index_items(nick_paths), mizuki_items=get_index_items(mizuki_paths)))
 
 
 def main():
     os.makedirs("./dist", exist_ok=True)
-    paths = [path for path in glob.glob("./recipes/*.md")]
+    nick_paths = [path for path in glob.glob("./recipes/nick/*.md")]
+    nick_paths.sort()
+    mizuki_paths = [path for path in glob.glob("./recipes/mizuki/*.md")]
+    mizuki_paths.sort()
 
-    generate_index(paths)
+    paths = nick_paths + mizuki_paths
+
+    generate_index(nick_paths, mizuki_paths)
 
     for path in paths:
         generate_recipe(path)

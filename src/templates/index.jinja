@@ -3,12 +3,25 @@
     <article id="home">
         <h1>Recipes</h1>
         <p>A collection of recipes that I've found over the years and I want to put in a single location</p>
-        <div id="recipe-list">
-            {% for name, url in items %}
-                <a href="{{ url }}">
-                    {{ name }}
-                </a>
-            {% endfor %}
-        </div>
+        <section>
+            <h2>Nick's recipes</h2>
+            <div class="recipe-list">
+                {% for name, url in nick_items %}
+                    <a href="{{ url }}">
+                        {{ name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
+        <section>
+            <h2>みーたんコーナー</h2>
+            <div class="recipe-list">
+                {% for name, url in mizuki_items %}
+                    <a href="{{ url }}">
+                        {{ name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </section>
     </article>
 {% endblock %}
