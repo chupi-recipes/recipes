@@ -1,6 +1,6 @@
 # Salt biscuits
 
-Adapted from [栗原はるみ](https://www.yutori.co.jp/shop/rp/rp181017/)
+Adapted from [栗原 はるみ](https://www.yutori.co.jp/shop/rp/rp181017/)
 
 Servings: 5日分
 
