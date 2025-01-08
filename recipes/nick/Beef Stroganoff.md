@@ -10,7 +10,8 @@ Servings: 4
 - 1 handful of gherkins
 - 1 bunch of fresh flat-leaf parsley 
 ## Stroganoff
-- 300g mixed mushrooms olive oil
+- 300g mixed mushrooms
+- olive oil
 - 3 cloves of garlic
 - 2x 200g sirloin steaks, fat removed
 - 1 heaped tsp sweet paprika
