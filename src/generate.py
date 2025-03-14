@@ -142,7 +142,7 @@ def main():
         try:
             generate_recipe(path)
         except Exception as e:
-            print("Error processing: " + path")
+            print("Error processing: " + path)
             raise e
 
 
