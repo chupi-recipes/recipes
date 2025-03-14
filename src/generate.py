@@ -139,7 +139,11 @@ def main():
     generate_index(nick_paths, mizuki_paths)
 
     for path in paths:
-        generate_recipe(path)
+        try:
+            generate_recipe(path)
+        except Exception as e:
+            print("Error processing: " + path")
+            raise e
 
 
 if __name__ == "__main__":
