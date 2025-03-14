@@ -1,3 +1,4 @@
+inport icu
 import glob
 import os
 import re
@@ -129,10 +130,14 @@ def generate_index(nick_paths, mizuki_paths):
 
 def main():
     os.makedirs("./dist", exist_ok=True)
+    
+    loc = icu.Locale("ja")
+    collator = icu.Collator.createInstance(loc)
+
     nick_paths = [path for path in glob.glob("./recipes/nick/*.md")]
-    nick_paths.sort()
+    nick_paths = sorted(nick_paths, key=collator.getSortKey)
     mizuki_paths = [path for path in glob.glob("./recipes/mizuki/*.md")]
-    mizuki_paths.sort()
+    mizuki_paths = sorted(mizuki_paths, key=collator.getSortKey)
 
     paths = nick_paths + mizuki_paths
 
