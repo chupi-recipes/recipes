@@ -1,4 +1,4 @@
-inport icu
+import icu
 import glob
 import os
 import re
